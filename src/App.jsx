@@ -5,6 +5,7 @@ import SambutanPimpinan from './components/SambutanPimpinan';
 import AboutSection from './components/AboutSection';
 import Facilities from './components/Facilities';
 import NewsSection from './components/NewsSection';
+import RegistrationForm from './components/RegistrationForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
         <AboutSection />
         <Facilities />
         <NewsSection />
+        <RegistrationForm />
 
         {/* CTA Section for Pendaftaran */}
-        <section id="pendaftaran" className="py-16 md:py-24 bg-emerald-900">
+        <section className="py-16 md:py-24 bg-emerald-900">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-gradient-to-r from-emerald-800 to-emerald-900 rounded-3xl p-8 md:p-16 text-center shadow-2xl">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
@@ -32,13 +34,13 @@ function App() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
-                  href="#"
+                  href="#pendaftaran"
                   className="inline-flex items-center justify-center px-8 py-4 bg-amber-500 hover:bg-amber-600 text-emerald-900 font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto"
                 >
                   Daftar Online Sekarang
                 </a>
                 <a
-                  href="#"
+                  href="#pendaftaran"
                   className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-emerald-900 transition-all duration-300 w-full sm:w-auto"
                 >
                   Download Brosur
