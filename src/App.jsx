@@ -40,7 +40,8 @@ function App() {
                   Daftar Online Sekarang
                 </a>
                 <a
-                  href="#pendaftaran"
+                  href="/brosur-al-anwar.pdf"
+                  download="Brosur_Pesantren_AlAnwar.pdf"
                   className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-emerald-900 transition-all duration-300 w-full sm:w-auto"
                 >
                   Download Brosur

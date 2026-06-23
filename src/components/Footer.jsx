@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import AdminDashboard from './AdminDashboard';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [showAdmin, setShowAdmin] = useState(false);
 
   const quickLinks = [
     { name: 'Beranda', href: '#beranda' },
@@ -18,6 +21,10 @@ const Footer = () => {
     'SMA Islam Terpadu',
     "Ma'had Aly",
   ];
+
+  if (showAdmin) {
+    return <AdminDashboard />;
+  }
 
   return (
     <footer className="bg-emerald-900 text-white">
@@ -130,6 +137,14 @@ const Footer = () => {
                 Terms of Service
               </a>
             </div>
+            {/* Hidden Admin Button for Development */}
+            <button
+              onClick={() => setShowAdmin(true)}
+              className="text-emerald-300 hover:text-amber-500 text-xs underline opacity-50 hover:opacity-100 transition-opacity"
+              title="Admin Dashboard"
+            >
+              Mode Admin
+            </button>
           </div>
         </div>
       </div>
