@@ -6,8 +6,8 @@ const NewsSection = () => {
       image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop',
       date: '15 Maret 2024',
       category: 'Prestasi',
-      title: 'Wisuda Tahfidz Angkatan ke-15 Lulus dengan Nilai Memuaskan',
-      excerpt: 'Sebanyak 120 santri wisudawan tahfidz berhasil menyelesaikan hafalan 30 juz Al-Qur\'an dengan rata-rata nilai mumtaz.',
+      title: "Wisuda Tahfidz Angkatan ke-15 Lulus dengan Nilai Memuaskan",
+      excerpt: "Sebanyak 120 santri wisudawan tahfidz berhasil menyelesaikan hafalan 30 juz Al-Qur'an dengan rata-rata nilai mumtaz.",
       icon: BookOpen,
     },
     {
@@ -55,9 +55,9 @@ const NewsSection = () => {
   const getCategoryColor = (category) => {
     switch (category) {
       case 'Prestasi':
-        return 'bg-pesantren-gold text-pesantren-green';
+        return 'bg-amber-500 text-emerald-900';
       case 'Kompetisi':
-        return 'bg-pesantren-emerald text-white';
+        return 'bg-emerald-700 text-white';
       case 'Kegiatan':
         return 'bg-blue-500 text-white';
       case 'Akademik':
@@ -72,14 +72,14 @@ const NewsSection = () => {
   };
 
   return (
-    <section id="berita" className="py-16 bg-white">
+    <section id="berita" className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-pesantren-green/10 text-pesantren-green font-medium rounded-full text-sm mb-4">
+          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-800 font-medium rounded-full text-sm mb-4">
             Berita & Kegiatan
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-pesantren-green mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4">
             Kabar Al-Anwar
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -92,7 +92,7 @@ const NewsSection = () => {
           {news.map((item, index) => (
             <article
               key={index}
-              className="group bg-pesantren-cream rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              className="group bg-pesantren-cream rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100"
             >
               {/* Thumbnail Image */}
               <div className="relative aspect-video overflow-hidden">
@@ -113,12 +113,12 @@ const NewsSection = () => {
               <div className="p-6">
                 {/* Date with Icon */}
                 <div className="flex items-center text-gray-500 text-sm mb-3">
-                  <Calendar className="w-4 h-4 mr-2 text-pesantren-emerald" />
+                  <Calendar className="w-4 h-4 mr-2 text-emerald-700" />
                   <span>{item.date}</span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-pesantren-green transition-colors duration-300">
+                <h3 className="text-lg font-bold text-gray-800 mb-3 line-clamp-2 group-hover:text-emerald-700 transition-colors duration-300">
                   {item.title}
                 </h3>
 
@@ -130,7 +130,7 @@ const NewsSection = () => {
                 {/* Read More Link */}
                 <a
                   href="#"
-                  className="inline-flex items-center text-pesantren-green font-semibold hover:text-pesantren-emerald transition-colors duration-300 group/link"
+                  className="inline-flex items-center text-emerald-700 font-semibold hover:text-emerald-900 transition-colors duration-300 group/link"
                 >
                   Baca Selengkapnya
                   <ArrowRight className="w-4 h-4 ml-2 group-hover/link:translate-x-1 transition-transform duration-300" />
@@ -144,36 +144,11 @@ const NewsSection = () => {
         <div className="mt-12 text-center">
           <a
             href="#"
-            className="inline-flex items-center px-8 py-4 bg-pesantren-green text-white font-semibold rounded-lg hover:bg-pesantren-emerald transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="inline-flex items-center px-8 py-4 bg-emerald-700 text-white font-semibold rounded-lg hover:bg-emerald-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Lihat Semua Berita
             <ArrowRight className="w-5 h-5 ml-2" />
           </a>
-        </div>
-
-        {/* Newsletter Subscription */}
-        <div className="mt-16 bg-gradient-to-r from-pesantren-green to-pesantren-emerald rounded-2xl p-8 sm:p-12">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              Tetap Terupdate dengan Berita Terbaru
-            </h3>
-            <p className="text-white/90 mb-6">
-              Berlangganan newsletter kami untuk mendapatkan informasi terkini tentang kegiatan dan prestasi santri.
-            </p>
-            <form className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
-              <input
-                type="email"
-                placeholder="Masukkan email Anda"
-                className="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-pesantren-gold outline-none text-gray-800"
-              />
-              <button
-                type="submit"
-                className="px-6 py-3 bg-pesantren-gold text-pesantren-green font-semibold rounded-lg hover:bg-yellow-400 transition-colors duration-300"
-              >
-                Langganan
-              </button>
-            </form>
-          </div>
         </div>
       </div>
     </section>
