@@ -3,9 +3,9 @@ import { Building, BookOpen, Wifi, Utensils, Dumbbell, Church } from 'lucide-rea
 const Facilities = () => {
   const facilities = [
     {
-      image: 'https://images.unsplash.com/photo-1564121211835-e8f7f79dc2a0?w=600&h=400&fit=crop',
+      image: 'https://images.unsplash.com/photo-1564121217839-e8f7f79dc2a0?w=600&h=400&fit=crop',
       badge: 'Ibadah',
-      title: 'Masjid Jami\'',
+      title: "Masjid Jami'",
       description: 'Masjid utama dengan kapasitas 1000+ jamaah, dilengkapi AC dan sistem sound modern untuk kegiatan ibadah sehari-hari.',
       icon: Church,
     },
@@ -20,7 +20,7 @@ const Facilities = () => {
       image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop',
       badge: 'Akademik',
       title: 'Gedung Tahfidz',
-      description: 'Gedung khusus untuk program hafalan Al-Qur\'an dengan ruang halaqah yang kondusif dan metode tahfidz terstruktur.',
+      description: "Gedung khusus untuk program hafalan Al-Qur'an dengan ruang halaqah yang kondusif dan metode tahfidz terstruktur.",
       icon: BookOpen,
     },
     {
@@ -78,14 +78,14 @@ const Facilities = () => {
   };
 
   return (
-    <section id="fasilitas" className="py-16 bg-pesantren-cream">
+    <section id="fasilitas" className="py-16 md:py-24 bg-pesantren-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-2 bg-pesantren-green/10 text-pesantren-green font-medium rounded-full text-sm mb-4">
+          <span className="inline-block px-4 py-2 bg-emerald-100 text-emerald-800 font-medium rounded-full text-sm mb-4">
             Fasilitas Pesantren
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-pesantren-green mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-emerald-900 mb-4">
             Fasilitas Lengkap & Modern
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -98,7 +98,7 @@ const Facilities = () => {
           {facilities.map((facility, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+              className="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-100"
             >
               {/* Image Container with Hover Zoom */}
               <div className="relative aspect-[4/3] overflow-hidden">
@@ -115,13 +115,13 @@ const Facilities = () => {
                 </div>
                 {/* Icon Overlay */}
                 <div className="absolute bottom-3 right-3 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <facility.icon className="w-5 h-5 text-pesantren-green" />
+                  <facility.icon className="w-5 h-5 text-emerald-700" />
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-pesantren-green transition-colors duration-300">
+                <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-emerald-700 transition-colors duration-300">
                   {facility.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -139,7 +139,7 @@ const Facilities = () => {
           </p>
           <a
             href="#pendaftaran"
-            className="inline-flex items-center px-6 py-3 bg-pesantren-green text-white font-semibold rounded-lg hover:bg-pesantren-emerald transition-colors duration-300"
+            className="inline-flex items-center px-6 py-3 bg-emerald-700 text-white font-semibold rounded-lg hover:bg-emerald-800 transition-colors duration-300"
           >
             Jadwalkan Kunjungan
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
