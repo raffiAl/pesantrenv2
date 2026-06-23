@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,9 +20,6 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
   ];
 
   return (
